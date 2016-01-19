@@ -7,14 +7,18 @@
       // Challenge #1
       // on page load
       // set window.pizzaSize equal to "large"
-
+      document.addEventListener('DOMContentLoaded', function () {
+      window.pizzaSize = "large"
+      setInterval(function () {
+      document.querySelector('input').value = window.pizzaSize
+      document.querySelector('span').innerHTML = window.pizzaSize
+    }, 0)
+  })
       // Challenge #2
       // on page load
       // set the value of the pizza-size input element to the value of window.pizzaSize
       // set the innerHTML of the display-size span to the value of window.pizzaSize
       // this is part 1 of binding the span to the window.pizzaSize property
-
-
       // Challenge #3
       // every 1 second, update the value of both the input and the span to the value of window.pizzaSize
       // in the console, manually change window.pizzaSize to something else
